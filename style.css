@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-family-text: "Roboto";
+  --font-color: hsla(240, 9%, 89%, 1);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-text);
+  background-color: #2F2F33;
+  color: var(--font-color)
+}
+
+#app {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 115px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9rem;
+}
+
+#logo {
+  width: 186.28px;
+  height: 32.75px;
+}
+
+.input-button {
+  display: flex;
+  gap: .8rem
+}
+
+input {
+  width: 460px;
+  padding: 1.6rem;
+  color: var(--font-color);
+  background: hsla(191, 65%, 7%, 1);
+}
+
+input:hover {
+  background: rgb(16, 31, 34);
+
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  padding: 1.2rem;
+
+  color: var(--font-color);
+  font-family: var(--font-family-text);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background: hsla(195, 91%, 25%, 1);
+}
+
+button:hover {
+  background: rgb(8, 106, 139);
+  cursor: pointer;
+}
+
+input,
+button {
+  border: none;
+  border-radius: .5rem;
+}
+
+.table-wrapper {
+  border: 1px solid hsla(191, 31%, 42%, 1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+table {
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+
+  background: hsla(194, 72%, 13%, 1);
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 1.6rem 4rem;
+}
+
+table tr {
+  border-bottom: 1px solid hsla(191, 31%, 42%, 1);
+}
+
+table tbody tr:nth-child(odd) {
+  background: hsla(195, 61%, 6%, 0.5);
+}
+
+table td {
+  padding: 2.4rem 4rem;
+}
+
+.avatar {
+  display: flex;
+  gap: 1rem;
+}
+
+.avatar img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar a {
+  text-decoration: none;
+  color: var(--font-color)
+}
+
+.avatar a:hover {
+  cursor: pointer;
+}
+
+.name span {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.remove {
+  color: hsla(355, 91%, 66%, 1);
+}
+.remove span:hover {
+  cursor: pointer;
+  color: rgb(236, 131, 139);
+}
